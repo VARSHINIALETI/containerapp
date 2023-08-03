@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  containerapp:
+    image: ${DOCKER_REGISTRY-}containerapp
+    build:
+      context: .\containerapp
+      dockerfile: Dockerfile
